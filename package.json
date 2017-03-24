@@ -11,7 +11,8 @@
     "url": "https://github.com/eheikes/use-the-platform-talk.git"
   },
   "scripts": {
-    "build": "run-p copy:assets copy:flowtime copy:talk pug",
+    "build": "run-p copy:assets copy:flowtime copy:talk pug && npm run correct-eols",
+    "clean": "rimraf dist",
     "copy:assets": "mkdirp dist/assets && cp -r assets/** dist/assets/",
     "copy:favicon": "mkdirp dist && cp node_modules/Flowtime.js/favicon.ico dist/",
     "copy:talk": "run-p copy:favicon copy:images copy:video copy:css",
@@ -19,7 +20,7 @@
     "copy:flowtime": "mkdirp dist/css/modifiers dist/css/themes dist/js && cp -r node_modules/Flowtime.js/css/* dist/css/ && cp -r node_modules/Flowtime.js/js/*.js dist/js/",
     "copy:images": "mkdirp dist/img && cp -r img/* dist/img/",
     "copy:video": "mkdirp dist/video && cp -r video/* dist/video/",
-    "clean": "rimraf dist",
+    "correct-eols": "find dist/css dist/js -type f | xargs dos2unix",
     "deploy": "gh-pages -d dist",
     "pug": "mkdirp dist && pug index.pug -O '{\"pretty\": true}' --out dist",
     "start": "http-server dist"

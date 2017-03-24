@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="description", content="Front-end frameworks like Angular, React, and Ember are popular for building web apps, but are they essential? We'll look at how leveraging native browser capabilities with decoupled tools can provide long-term flexibility and maintenance.")
+    title Use The Platform
+    link(rel="shortcut icon", href="favicon.ico")
+    link(rel="stylesheet", href="assets/css/reset.css")
+    link(rel="stylesheet", href="css/flowtime.css")
+    link(rel="stylesheet", href="css/themes/default.css")
+    link(rel="stylesheet", href="assets/css/prism.css")
+    link(rel="stylesheet", href="css/talk.css")
+  body
+    .flowtime.ft-cross
+      include ./talk.pug
+    script(src="js/brav1toolbox.js")
+    script(src="js/flowtime.js")
+    script(src="assets/js/prism.js")
+    script.
+      Flowtime.showProgress(true);
+      Flowtime.clicker(true);
+      Flowtime.start();
