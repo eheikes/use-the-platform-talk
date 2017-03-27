@@ -6,6 +6,16 @@ This was a talk given at the 2017 Des Moines Web Geeks Social Event.
 
 The presentation can be viewed at [eheikes.github.io/use-the-platform-talk](http://eheikes.github.io/use-the-platform-talk/), or from the [`dist` folder](dist/) in this repository.
 
+## References
+
+* Web Components collection, resources, and more: https://www.webcomponents.org
+* Vanilla JS "framework": http://vanilla-js.com
+* Shadow DOM tutorial: https://developers.google.com/web/fundamentals/getting-started/primers/shadowdom
+* Custom Elements tutorial: https://developers.google.com/web/fundamentals/getting-started/primers/customelements
+* `<template>` info: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template
+* Polymer website: https://www.polymer-project.org/
+* Mobile performance talk: https://www.youtube.com/watch?v=4bZvq3nodf4
+
 ## Local Build
 
 The presentation can be built and served locally using [Node.js](https://nodejs.org/). To begin, `git clone` this repository and then run `npm install` at the command line (in the new folder).
