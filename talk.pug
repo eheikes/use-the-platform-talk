@@ -2,7 +2,441 @@
   .ft-page(data-id="title")
     .stack-center
       .stacked-center
-        h1.bright Use The Platform
+        h1.bright Why You May Not Need A Framework
+  .ft-page(data-id="history")
+    .stack-center
+      .stacked-center
+        h1 A Brief History of JS Development
+        img(src="img/graybeard.png" style="max-height: 50vh" alt="Me as graybeard.")
+    .stack-center.ft-fragment.shy
+      img.stacked-center(src="img/javascript-history.png", alt="Timeline of Javascript from 1990s to present.")
+      cite
+        | Source: ??? /
+        |
+        a(href="https://www.quora.com/Can-you-sum-up-the-history-of-JavaScript-frameworks-main-events-from-early-90s-until-2015-in-the-form-of-a-simple-ordered-list") Quora
+      //
+        Terrible history of JS/ES
+        LiveScript -> Javascript
+        JScript
+        VBScript
+  .ft-page(data-id="1990s")
+    .stack-center
+      .stacked-center
+        h1 1990s - early 2000s
+  .ft-page(data-id="90s-website")
+    .stack-center
+      img.stacked-center(src="img/yahoo-90s.jpg" alt="Yahoo webpage in the 90s.")
+  .ft-page(data-id="js-example")
+    .stack-center
+      .stacked-center
+        h1 JS In The 90s Be Like
+        pre
+          code.language-markup.
+            &lt;SCRIPT LANGUAGE="JavaScript1.3"&gt;
+                &lt;!--
+                // This script creates an events link for the current date
+                var dt = new Date();
+                var month= dt.getMonth() + 1;
+                if (month &lt; 10)
+                  month = "0" + month;
+                var date = dt.getDate();
+                if (date &lt; 10)
+                  date = "0" + date;
+                var year = dt.getYear();
+                if (year &lt; 2000)      // Y2K Fix, Isaac Powell
+                  year = year + 1900; // http://onyx.idbsu.edu/~ipowell
+                document.write("&lt;A HREF='events/" + year + month + "/" + year + month + date + ".html'>Today&amp;#146;s Events&lt;/A&gt;");
+                // End --&gt;
+              &lt;/SCRIPT&gt;
+  .ft-page(data-id="frustration")
+    .stack-center
+      img.stacked-center(src="img/frustration.jpg" alt="Person frustrated at the computer.")
+      cite
+        | Source:
+        |
+        a(href="https://flic.kr/p/4L8K7b") Sybren Stüvel
+  .ft-page(data-id="2000s")
+    .stack-center
+      .stacked-center
+        h1 mid-2000s
+  .ft-page(data-id="firefox")
+    .stack-center
+      img.stacked-center(src="img/firefox-logo.svg" style="max-height: 80%; max-width: 50%", alt="Firefox logo.")
+  .ft-page(data-id="google")
+    .stack-center
+      img.stacked-center(src="img/gmail.png" alt="Screenshot of Gmail.")
+    //- .stack-center.ft-fragment
+    //-   img.stacked-center(src="img/google-maps.png" alt="Screenshot of Google Maps.")
+  //- .ft-page(data-id="prototype")
+  //-   .stack-center
+  //-     img.stacked-center(src="img/prototypejs.png" alt="PrototypeJs logo.")
+  .ft-page(data-id="jquery")
+    .stack-center
+      img.stacked-center.glowing(src="img/jquery.png" alt="jQuery logo.")
+  .ft-page(data-id="present")
+    .stack-center
+      .stacked-center
+        h1 Present Day
+        h2 “Age of the Frameworks”
+    //
+      quick scaffolding tools. boilerplate projects.
+      powerful abstractions.
+  //- .ft-page(data-id="current-frameworks")
+  //-   .stack-center
+  //-     img.stacked-center(src="img/frameworks.png", alt="Popular front-end frameworks.")
+    //- .stack-center.ft-fragment.shy
+    //-   img.stacked-center(src="img/angular-cli.png", alt="Angular CLI website.")
+    //- .stack-center.ft-fragment.shy
+    //-   img.stacked-center(src="img/react-boilerplate.png", alt="React Boilerplate website.")
+  .ft-page(data-id="framework-usage")
+    .stack-center
+      img.stacked-center(src="img/framework-graph.jpg", alt="Graph of frameworks used by developers.")
+      cite
+        | Source:
+        |
+        a(href="https://www.sitepoint.com/front-end-tooling-trends-2017/") Craig Buckler / Sitepoint
+.ft-section(data-id="problems")
+  .ft-page(data-id="framework-fatigue")
+    .stack-center
+      img.stacked-center(src="img/frameworks.png", alt="Popular front-end frameworks.")
+      //
+        (yes, React by itself is not a framework, but has ecosystem)
+        All these choices
+        Great projects
+        Give you a clear path to follow
+        gives you a framework out of the box to build web apps
+        great tools
+        Very easy to get started and build features.
+    .stack-center.ft-fragment
+      img.stacked-center(src="img/all-frameworks.png", alt="Many more front-end frameworks.")
+      //
+        "Framework fatigue"
+        hard to keep up on technologies.
+        Joke about new framework each week... Constantly changing.
+  .ft-page(data-id="compartments")
+    .stack-center
+      img.stacked-center(src="img/email-links.png", alt="Links from email newsletter.")
+    .stack-center.ft-fragment
+      img.stacked-center(src="img/email-links-highlighted.png", alt="Links from email newsletter, with frameworks highlighted.")
+    //
+      Compartmentalized ecosystems
+  .ft-page(data-id="banno-history1")
+    .stack-center
+      img.stacked-center.glowing(src="img/banno-logo.svg", alt="Banno logo.")
+  .ft-page(data-id="banno-history2")
+    .stack-center
+      img.stacked-center(src="img/banno-people.png")
+      //
+        Wrote apps in Angular 1 3-4yrs ago
+  .ft-page(data-id="angular-repos")
+    .stack-center
+      img.stacked-center(src="img/angular-repos.png")
+  .ft-page(data-id="caged")
+    .stack-center
+      img.stacked-center(src="img/caged-kids.jpg", alt="Kids in a cage.")
+      cite
+        | Source:
+        |
+        a(href="https://flic.kr/p/7QD7vP") Morten Liebach
+  .ft-page(data-id="problems")
+    .stack-center
+      .stacked-center
+        h1 Problems with Frameworks
+        ul
+          li Components must fit the framework
+          li Components can't easily be used in another framework
+          li Adds friction to maintenance
+          li New devs must learn the framework
+          li Frameworks add extra weight to your app
+          li Frameworks are not performant on mobile
+          li Migrating to a new framework is painful
+          li Any given framework may be dead in 5 years
+      //
+        Need Angular-specific stuff for the Angular apps. (Have to be wrapped in Angular 1 directives etc.) Adds friction to maintenance.
+    
+        Can't take an Angular component and put it in a non-Angular app.
+    
+        Onboarding -- devs have to learn a new framework.
+
+        Extra weight from 1) abstractions and 2) unneeded pieces
+    
+        building thick layers on top of the platform is inherently costly, and the costs are much harder to bear on mobile, where more users are today.
+        
+        What if we wanted to change to the latest hotness? Angular 2 has an upgrade path, but it's still a major version change. React/Vue -- could be done, but requires integration into Angular. And what if we wanted to move to a different MVVM framework -- complete rewrite.
+    
+        What do we do if we want to switch to React or Vue -- just have Angular pieces. What if 5 years down the road a different framework is the new hotness? What then?
+
+        "Leaving the path" problem; almost religious/ideological.
+        how to make it last for 5 years?
+.ft-section(data-id="solution")
+  .ft-page(data-id="platform")
+    .stack-center
+      .stacked-center
+        h1 The Solution:
+        .ft-fragment
+          h2 The (Web) Platform
+          img(src="img/fb-shocked.png", "Shocked face.")
+  .ft-page(data-id="vanilla-js")
+    .stack-center
+      img.stacked-center(src="img/vanilla-js.png", alt="Vanilla-js.com screenshot.")
+  .ft-page(data-id="js-builtin")
+    .stack-center
+      .stacked-center
+        h1 Vanilla JS
+        .column-container
+          .column
+            ul
+              li Prototype-based Objects
+              li DOM Traversal / Manipulation
+              li DOM Observers
+              li Animations
+          .column
+            ul
+              li Functional Programming
+              li Ajax
+              li Events
+              li Promises
+              li Modules
+  .ft-page(data-id="polyfills")
+    .stack-center
+      img.stacked-center(src="img/polyfill-io.png", alt="Polyfill.io screenshot.")
+  .ft-page(data-id="transpiling")
+    .stack-center
+      img.stacked-center(src="img/babel.png", alt="Babel website screenshot.")
+      //
+        Slow browser uptick on ES6 modules
+        Transpilers in the toolchain are much better -- no browser weight, dev side
+  .ft-page(data-id="components")
+    .stack-center
+      .stacked-center
+        h1 Components
+        //
+          Frameworks are already using this paradigm.
+          Angular 2, React, Vue. React & Vue are mainly view-layer components.
+          4 WC specs
+        .column-container
+          .column
+            ul
+              li Custom Elements
+              li Templates
+          .column
+            ul
+              li Shadow DOM
+              li HTML Imports
+  .ft-page(data-id="custom-elements")
+    .stack-center
+      .stacked-center
+        h1 Custom Elements
+        pre
+          code.language-javascript.
+            class AppDrawer extends HTMLElement {...}
+            window.customElements.define('app-drawer', AppDrawer);
+        pre
+          code.language-markup.
+            &lt;app-drawer&gt;&lt;/app-drawer&gt;
+        //
+          Custom elements: write your own tag
+  .ft-page(data-id="templates")
+    .stack-center
+      .stacked-center
+        h1 Templates
+        pre
+          code.language-markup.
+            &lt;template id="app-drawer-template"&gt;
+              &lt;style&gt;#tabs { ... }&lt;/style&gt;
+              &lt;div id="tabs"&gt;...&lt;/div&gt;
+              &lt;div id="panels"&gt;...&lt;/div&gt;
+            &lt;/template&gt;
+        pre
+          code.language-javascript.
+            const t = document.querySelector('#app-drawer-template');
+            const clone = document.importNode(t.content, true);
+            document.body.appendChild(clone);
+        //
+          inert markup
+  .ft-page(data-id="shadow-dom")
+    .stack-center
+      .stacked-center
+        h1 Shadow DOM (v1)
+        img(src="img/shadow-dom-inspected.png", alt="Shadow DOM shown in devtools")
+        //
+          Completely encapsulate components
+    .stack-center.ft-fragment
+      .stacked-center
+        h1 &nbsp;
+        pre
+          code.language-javascript.
+            customElements.define('fancy-tabs', class extends HTMLElement {
+              constructor() {
+                super();
+
+                const shadowRoot = this.attachShadow({mode: 'open'});
+                const t = document.querySelector('#app-drawer-template');
+                const clone = document.importNode(t.content, true);
+                shadowRoot.appendChild(clone);
+              }
+              ...
+            });
+  .ft-page(data-id="html-imports")
+    .stack-center
+      .stacked-center
+        h1 HTML Imports
+        pre
+          code.language-markup.
+            &lt;link rel="import" href="../app-drawer.html"&gt;
+            &lt;app-drawer active&gt;&lt;/app-drawer&gt;
+        //
+          include & reuse HTML documents
+          problems here -- browsers aren't implementing, waiting on ES6 module imports
+  .ft-page(data-id="browser-support")
+    .stack-center
+      img.stacked-center(src="img/wc-browser-support.png", alt="Chart of browser support for native web components.")
+    //
+      Eventually will be native.
+      Chrome supports Shadow DOM now.
+  .ft-page(data-id="Webcomponents-collection")
+    .stack-center
+      img.stacked-center(src="img/wc-collection-1.png", alt="Webcomponents.org collection of web components.")
+    //- .stack-center.ft-fragment.shy
+    //-   img.stacked-center(src="img/wc-collection-2.png", alt="Searching for a calendar component.")
+    .stack-center.ft-fragment
+      img.stacked-center(src="img/wc-collection-3.png", alt="Details for a calendar component.")
+    //- .stack-center.ft-fragment.shy
+    //-   img.stacked-center(src="img/elix.png", alt="Elix repo screenshot.")
+    //
+      Can use WC inside other frameworks.
+      Can split work into pieces to be worked on.
+      Components "blocks" -- can easily add blocks, or put blocks inbetween other blocks.
+         * Native is simpler & less abstractions/code.
+         * Faster & lighter because it's closer to the metal (native)
+  .ft-page(data-id="libraries")
+    .stack-center
+      .stacked-center
+        h1 Libraries
+        p  Routing, data binding, app state, authentication, etc.
+        pre.ft-fragment
+          code.
+            npm install foobar
+        pre.ft-fragment
+          code.language-javascript.
+            import foobar from 'foobar';
+      //
+        decoupled, but easily integrated
+        small and reusable
+.ft-section(data-id="banno")
+  .ft-page(data-id="intro")
+    .stack-center
+      img.stacked-center.glowing(src="img/banno-logo.svg", alt="Banno logo.", width="500")
+  .ft-page(data-id="banno-online")
+    .stack-center
+      img.stacked-center(src="img/banno-online.png", alt="Banno Online screenshot.")
+      //
+        1 year ago built OLB
+        supports modern browsers
+  .ft-page(data-id="banno-online-breakdown")
+    .stack-center
+      .stacked-center
+        h1 Breakdown
+        ul
+          li Runs on all modern browsers
+          li Transpiled from ES6 to ES5
+          li 3 polyfills: web components,
+            |
+            code &lt;dialog&gt;
+            | , and
+            |
+            code Element.prototype.closest
+          li Custom router based on page.js
+          li No Sass/LESS; just CSS (with variables & shadow DOM)
+          li Bundled using vulcanize & crisper (now polymer-bundler)
+          li Created polymer-lint and polymer-rename
+  .ft-page(data-id="polymer1")
+    .stack-center
+      img.stacked-center(src="img/polymer1-docs.png", alt="Polymer docs.")
+      //
+        very small
+        lib, not app framework
+        syntactic sugar over WC + polyfill
+        goal is to not be necessary in the future (because all native)
+        You can use WC and Polymer inside a framework if you wish.
+        Alternatives: Bosonic, X-Tag, SkateJS
+  //- .ft-page(data-id="youtube")
+  //-   .stack-center
+  //-     img.stacked-center(src="img/youtube-website.jpg", alt="YouTube website.")
+  .ft-page(data-id="bannoweb-components")
+    .stack-center
+      img.stacked-center(src="img/bannoweb-components.png", alt="Banno Online components.")
+  .ft-page(data-id="jha-components")
+    .stack-center
+      img.stacked-center(src="img/jha-components.png", alt="JHA components.")
+  .ft-page(data-id="banno-rewrite")
+    .stack-center
+      img.stacked-center(src="img/banno-website.png", alt="Banno.com screenshot.")
+      //
+        Last Nov/Dec, our team was given task of researching tech stack.
+        
+        Complete rewrite BUT 5-year roadmap for Banno projects.
+        
+        Interop BO with the Platform (reuse components). Changing out pieces, or using different pieces in different apps.
+
+        "We have developed a set of basic components for layout and interactivity that are not project specific. They match our UI guidelines and are custom written for our use cases. These components are completely self-contained. We plan to utilize these components throughout our platform as basic building blocks."
+        
+        In fact, other apps can use other frameworks. Large enough team & number of products. But have to be able to utilize WCs. And still be loosely coupled -- routing, view layer, data binding, Ajax, app state,
+  .ft-page(data-id="polymer2")
+    .stack-center
+      img.stacked-center(src="img/polymer-2-announcement.png", alt="Polymer 2 blog post.")
+      //
+        Using Polymer (v2).
+        Migrating BO to v2 (because polyfill, pretty small changes -- see changelog)
+        v2 (RC) just released. Uses Custom Elements v1.
+        Smaller. ES6 support. Data system. (v0 & polymer v1 okay, but better now)
+.ft-section(data-id="conclusion")
+  .ft-page(data-id="future")
+    .stack-center
+      .stacked-center
+        h1 The Future
+        //
+          Just now starting, so it's too early to definitely say. But it looks promising.
+  .ft-page(data-id="josh")
+    .stack-center
+      .stacked-center
+        blockquote
+          p “These are the early days of web components. I think Polymer is going to help more developers start using components. And in the next several years we'll see more contenders like Polymer staying close to native APIs but adding what developers claim is missing from the browser. Add 10 more years and nobody will know what we're talking about.”
+          cite
+            a(href="https://twitter.com/joshsadler") @JoshSadler
+  .ft-page(data-id="age-of-the-platform")
+    .stack-center
+      .stacked-center
+        h2
+          | “Age of the
+          |
+          del.underneath Frameworks
+          ins.overlap Platform
+          | ”
+  .ft-page(data-id="use-the-platform")
+    .stack-center
+      img.stacked-center(src="img/keep-calm-and-usetheplatform.png", alt="Keep calm and use the platform.")
+      //
+        Frameworks can seem great for prototyping or featureset.
+        For your next project, don't reflexively reach for a framework. Instead, try using a set of simple libraries that leverage the native web platform.
+        
+        The browser IS the framework.
+
+        Simplicity matters. Not easy. It's hard to make things simple.
+
+        You can use native tech to get flexibility, speed, and leanness without sacrificing the power of frameworks.
+
+        Luckily we have the resources and management backing to rewrite the apps. But you might not be so lucky. Don't paint yourself into a corner.        
+  .ft-page(data-id="better-developer")
+    .stack-center
+      img.stacked-center(src="img/cherry-blossoms.jpg", alt="Looking at the sky through cherry blossoms.")
+      cite
+        | Source:
+        |
+        a(href="https://flic.kr/p/4CrhGt") Tanaka Juuyoh
+      //
+        Helps your career too, to have a solid foundation in web stack.
+        Don't be an Angular developer, or a React developer. Be a web developer.
   .ft-page(data-id="more-info")
     .stack-center
       .stacked-center
